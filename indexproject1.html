@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>barbar shop website design</title>
+	<link rel="stylesheet" type="text/css" href="styleproject1.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<section id="banner">
+		<img src="barbershop/logo.png" class="logo">
+	<div class="banner-text">
+		<h1>Hair style</h1>
+		<p>style your head is style your life</p>
+<div class="banneer-bth">
+	<a href="#"><span></span> find out</a>
+<a href="#"><span></span> read more</a>
+</div>	
+	</div>
+	</section>
+<div id="sidenav">
+	<nav>
+		<ul>
+			<li><a href="#">HOME</a></li>
+<li><a href="#">FEATURES</a></li>
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">TESTMONIALS</a></li>
+<li><a href="#">MEET US</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="menubtn">
+	<img src="barbershop/menu.png" id="menu">
+</div>
+<script>
+	var menubtn=document.getElementById("menubtn")
+	var sidenav=document.getElementById("sidenav")
+	var menu=document.getElementById("menu")
+
+menubtn.onclick=function(){
+	if (sidenav.style.right=="-250px"){
+		sidenav.style.right="0";
+		menu.src="barbershop/close.png"
+	}
+	else{
+		sidenav.style.right="-250px";
+		menu.src="barbershop/menu.png"
+	}
+}
+</script>
+
+
+</body>
+</html>

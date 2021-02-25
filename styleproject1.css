@@ -1,0 +1,101 @@
+*{
+	margin:0;
+	padding: 0;
+}
+#banner{
+	background-image:linear-gradient(rgba(0,0,0,0.5),#009688),url(barbershop/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.logo{
+	width: 140px;
+	position: absolute;
+	top: 4%;
+	left: 10%;
+}
+.banner-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 180px;
+}
+.banner-text h1{
+	font-size: 130px;
+}
+.banner-text p{
+	font-size: 20px;
+	font-style: italic;
+}
+.banneer-bth{
+	margin: 70px auto 0;
+}
+.banneer-bth a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+}
+.banneer-bth a span{
+width: 15%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background:#fff;
+z-index: -1;
+transition:color 0.5s;
+}
+.banneer-bth a:hover span{
+width: 100%;
+}
+.banneer-bth a:hover{
+	color: #000;
+	}
+#sidenav{
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background:#009688;
+	z-index: 2;
+	transition: 0.6s;
+}
+nav ul li{
+	list-style: none;
+	margin: 50px 20px;
+}
+nav ul li a{ 
+	text-decoration: none;
+	color: #fff;
+}
+#menubtn{
+	width: 50px;
+	height: 50px;
+	background-color: #009688;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+}
+#menubtn img{
+	width: 20px;
+	margin-top: 15px;
+}
+@media screen and(max-width: 770px){
+	.banner-text h1{
+	font-size: 44px;
+}
+.banneer-bth a{
+	display: block;
+	margin: 20px auto;
+}
+}
